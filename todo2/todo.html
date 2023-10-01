@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="todo.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1 class="todo-list-title">Todo List</h1>
+<ul class="todo-list">
+  <li class="todo-list-item">
+    <label>
+      <input class="todo-list-input" type="checkbox">
+      <span>To feed my dog</span>
+    </label>
+  </li>
+  <li class="todo-list-item">
+    <label>
+      <input class="todo-list-input" type="checkbox">
+      <span>go to gym</span>
+    </label>
+  </li>
+  <li class="todo-list-item">
+    <label>
+      <input class="todo-list-input" type="checkbox">
+      <span>nap time</span>
+    </label>
+  </li>
+</ul>
+<p class="empty-tasks hidden">All tasks completed. No new tasks</p>
+<form class="add-form" action="" method="post">
+  <input class="add-form-input" type="text" aria-label="Task description" placeholder="For example, buy an elephant" required>
+  <button class="add-form-button" type="submit">Add task</button>
+</form>
+
+<template id="task-template">
+  <li class="todo-list-item">
+    <label>
+      <input type="checkbox" class="todo-list-input">
+      <span></span>
+    </label>
+  </li>
+</template>
+<script src="./todo.js"></script>
+</body>
+</html>
